@@ -1,4 +1,4 @@
-version: '3.8'
+version: '4.34'
 
 services:
   web:
@@ -15,13 +15,24 @@ services:
     image: mysql:5.7
     container_name: mysql-db
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_ROOT_PASSWORD: root_password
       MYSQL_DATABASE: online
     volumes:
       - db_data:/var/lib/mysql
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
       - "3306:3306"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: db # Link to the MySQL container
+      MYSQL_ROOT_PASSWORD: root_password
+    depends_on:
+      - db
+    ports:
+      - "8081:80"  # Map phpMyAdmin to port 8081 on the host
 
 volumes:
   db_data:
