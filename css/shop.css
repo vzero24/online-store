@@ -1,0 +1,53 @@
+h3 {
+  font-family: 'Cairo', sans-serif;
+  font-weight: bold;
+}
+.card{
+  float: right;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.card img{
+  width: 100%;
+  height: 200px;
+}
+main{
+  width: 60%;
+}
+#aa{
+  margin-left: 70px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Existing styles */
+
+.navbar {
+  position: relative;
+  font-family: 'Cairo', sans-serif;
+}
+
+.admin-panel-link {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.admin-panel-link:hover {
+  text-decoration: underline;
+}
+.footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  border-top: 1px solid #ddd;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Cairo', sans-serif;
+}

@@ -1,0 +1,21 @@
+h3 {
+  font-family: 'cairo', sans-serif;
+  font-weight: bold;
+}
+
+main {
+  width: 40%;
+  margin-top: 30px;
+}
+
+table {
+  box-shadow: 1px 1px 10px silver;
+}
+
+thead {
+  text-align: center;
+}
+
+tbody {
+  text-align: center;
+}
